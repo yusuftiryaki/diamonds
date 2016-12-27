@@ -268,7 +268,8 @@ install.packages('RCurl')
 library('bitops')
 library('RCurl')
 
-load("E:/university/mef/R/BigDiamonds.Rda")
+download.file("https://raw.github.com/solomonm/diamonds-data/master/BigDiamonds.Rda",destfile="BigDiamonds.Rda",method="libcurl")
+load("BigDiamonds.Rda")
 ```
 
 The code used to obtain the data is available here:
